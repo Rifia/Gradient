@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Gradient</string>
+    <string name="enter_note">Note</string>
+    <string name="enter_rating">21</string>
+    <string name="add">+</string>
+    <string name="question">What happened?</string>
+    <string name="next">next</string>
+    <string name="finish">finish</string>
+    <string name="rate_question">How would you rate it?</string>
+</resources>
