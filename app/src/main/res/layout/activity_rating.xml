@@ -16,24 +16,26 @@
         android:gravity="center_horizontal"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:textSize="30sp"
+        android:textSize="@dimen/instruction_size"
         />
 
 
     <EditText
         android:id="@+id/rating"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="218dp"
-        android:background="@android:color/transparent"
+        android:layout_marginTop="@dimen/top_edit_text"
+        android:layout_marginLeft="@dimen/indent_size"
+        android:layout_marginRight="@dimen/indent_size"
+        android:background="@color/dark_violet"
         android:gravity="center_horizontal"
         android:hint="@string/enter_rating"
         android:inputType="text"
         android:textStyle="bold"
         android:textColor="@android:color/white"
-        android:textSize="40sp"/>
+        android:textSize="@dimen/enter_text_size"/>
 
 
     <Button

@@ -15,9 +15,10 @@
         android:layout_marginTop="79dp"
         android:padding="@dimen/padding"
         android:text="@string/greeting"
-        android:textColor="@android:color/white"
-        android:textSize="35sp"
-        android:textStyle="bold" />
+        android:textColor="@color/pink"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
 
     <Button
         android:id="@+id/start_button"
