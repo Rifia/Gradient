@@ -7,4 +7,6 @@
     <string name="next">next</string>
     <string name="finish">finish</string>
     <string name="rate_question">How would you rate it?</string>
+    <string name="greeting">GRADIENT</string>
+    <string name="start">Start</string>
 </resources>
