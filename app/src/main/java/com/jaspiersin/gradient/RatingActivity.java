@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import static com.jaspiersin.gradient.Resources.rateContent;
 
 public class RatingActivity extends Activity {
     @Override
@@ -18,10 +19,9 @@ public class RatingActivity extends Activity {
         finish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText userRating = (EditText) findViewById(R.id.rating);
-                Intent intent2 = new Intent(RatingActivity.this, MainActivity.class);
-                intent2.putExtra("userrating", userRating.getText().toString());
-                startActivity(intent2);
+                Intent i = new Intent(RatingActivity.this, MainActivity.class);
+                 rateContent = rating.getText().toString();
+                startActivity(i);
             }
         });
     }
