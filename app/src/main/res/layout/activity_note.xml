@@ -16,24 +16,28 @@
         android:gravity="center_horizontal"
         android:textColor="@android:color/white"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="30sp"
         />
 
 
     <EditText
         android:id="@+id/note"
-        android:layout_width="224dp"
-        android:layout_height="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="218dp"
         android:background="@android:color/transparent"
         android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="40sp"
         android:hint="@string/enter_note"
         android:inputType="text" />
 
 
     <Button
+        android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

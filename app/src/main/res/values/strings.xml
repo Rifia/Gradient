@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Gradient</string>
-    <string name="enter_note">Note</string>
-    <string name="enter_rating">21</string>
-    <string name="add">+</string>
+    <string name="enter_note">write here</string>
+    <string name="enter_rating">0-100</string>
+    <string name="add">show</string>
     <string name="question">What happened?</string>
     <string name="next">next</string>
     <string name="finish">finish</string>

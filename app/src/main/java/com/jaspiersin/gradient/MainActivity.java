@@ -30,8 +30,8 @@ public class MainActivity extends Activity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        final EditText note = (EditText) findViewById(R.id.note);
-        final EditText rating = (EditText) findViewById(R.id.rating);
+        final String note = getIntent().getExtras().getString("usernote");
+        final String rating = getIntent().getExtras().getString("userrating");
         final Button add = (Button) findViewById(R.id.add);
         final ListView items = (ListView) findViewById(R.id.items);
         final ItemsAdapter adapter = new ItemsAdapter();
@@ -40,15 +40,15 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
 
-                adapter.add(new Item(note.getText().toString(), Integer.valueOf(rating.getText().toString())));
+                adapter.add(new Item(note, Integer.valueOf(rating)));
 
             }
         });
-    }
+      }
 
     private class ItemsAdapter extends ArrayAdapter<Item> {
 
-        public ItemsAdapter() {
+         ItemsAdapter() {
             super(MainActivity.this, R.layout.item);
 
         }

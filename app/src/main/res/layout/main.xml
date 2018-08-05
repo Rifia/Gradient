@@ -2,38 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/ultra_violet"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/green"
+        android:background="@color/ultra_violet"
         android:orientation="horizontal"
         android:gravity="center"
         android:padding="@dimen/padding_small">
 
-        <EditText
-            android:id="@+id/note"
-            android:layout_width="225dp"
-            android:layout_height="wrap_content"
-            android:background="@android:color/transparent"
-            android:hint="@string/enter_note"
-            android:inputType="text" />
-
-        <EditText
-            android:id="@+id/rating"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            android:gravity="center"
-            android:hint="@string/enter_rating"
-            android:inputType="text" />
 
         <Button
             android:id="@+id/add"
-            android:layout_width="56dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/add" />
     </LinearLayout>
