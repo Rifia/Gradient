@@ -22,7 +22,7 @@ public interface EventDao {
 //    int countEvents();
 
     @Insert
-    void insertAll(Event... events);
+    void insert(Event event);
 
     @Delete
     void delete(Event event);

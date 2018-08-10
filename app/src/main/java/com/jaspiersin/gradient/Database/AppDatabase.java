@@ -4,6 +4,7 @@ import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
+import android.provider.SyncStateContract;
 
 import com.jaspiersin.gradient.DAO.EventDao;
 import com.jaspiersin.gradient.Entities.Event;
@@ -16,17 +17,20 @@ public abstract class AppDatabase extends RoomDatabase {
     private static AppDatabase INSTANCE;
 
 
-    public static AppDatabase getAppDatabase(Context context) {
+    public static AppDatabase getInstance(Context context) {
         if (INSTANCE == null) {
-            INSTANCE =
-                    Room.databaseBuilder(context.getApplicationContext(),
-                            AppDatabase.class, "events").allowMainThreadQueries().build();
-            //вынеси потом в отдельный поток
+            INSTANCE = buildDatabaseInstance(context);
         }
         return INSTANCE;
     }
 
-//    public static void destroyInstance() {
+    public static AppDatabase buildDatabaseInstance(Context context){
+        return Room.databaseBuilder(
+                context, AppDatabase.class, "events")
+                .allowMainThreadQueries().build();
+    }
+
+//    public static void cleanUp() {
 //        INSTANCE = null;
 //    }
 

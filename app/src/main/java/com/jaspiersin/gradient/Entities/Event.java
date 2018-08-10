@@ -15,6 +15,11 @@ public class Event {
     @ColumnInfo(name = "rating")
     private int rating;
 
+    public Event(String note, int rating) {
+        this.note = note;
+        this.rating = rating;
+    }
+
     public int getUid() {
         return uid;
     }
@@ -37,5 +42,14 @@ public class Event {
 
     public void setRating(int rating) {
         this.rating = rating;
+    }
+
+    @Override
+    public String toString() {
+        return "Event{" +
+                "uid=" + uid +
+                ", note='" + note + '\'' +
+                ", rating=" + rating +
+                '}';
     }
 }
