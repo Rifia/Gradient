@@ -15,11 +15,11 @@ public interface EventDao {
     @Query("SELECT * FROM events")
     List<Event> getAll();
 
-    @Query("SELECT * FROM events WHERE note LIKE :note and rating LIKE :rating")
-    Event findByNote(String note, int rating);
+//    @Query("SELECT * FROM events WHERE note LIKE :note and rating LIKE :rating")
+//    Event findByNote(String note, int rating);
 
-    @Query("SELECT COUNT(*) FROM events")
-    int countEvents();
+//    @Query("SELECT COUNT(*) FROM events")
+//    int countEvents();
 
     @Insert
     void insertAll(Event... events);

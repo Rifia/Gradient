@@ -35,12 +35,15 @@ public class MainActivity extends Activity {
         final ListView items =  findViewById(R.id.items);
         final ItemsAdapter adapter = new ItemsAdapter();
         items.setAdapter(adapter);
+
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 adapter.add(new Item(textContent, Integer.valueOf(rateContent)));
             }
         });
+
       }
       private class ItemsAdapter extends ArrayAdapter<Item> {
         public ItemsAdapter() {
