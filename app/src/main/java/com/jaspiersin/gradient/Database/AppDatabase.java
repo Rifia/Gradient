@@ -12,27 +12,5 @@ import com.jaspiersin.gradient.Entities.Event;
 @Database(entities = {Event.class}, version = 1)
 public abstract class AppDatabase extends RoomDatabase {
 
-    public  abstract EventDao eventDao();
-
-    private static AppDatabase INSTANCE;
-
-
-    public static AppDatabase getInstance(Context context) {
-        if (INSTANCE == null) {
-            INSTANCE = buildDatabaseInstance(context);
-        }
-        return INSTANCE;
-    }
-
-    public static AppDatabase buildDatabaseInstance(Context context){
-        return Room.databaseBuilder(
-                context, AppDatabase.class, "events")
-                .allowMainThreadQueries().build();
-    }
-
-//    public static void cleanUp() {
-//        INSTANCE = null;
-//    }
-
-
+    public  abstract EventDao eventDatabase();
 }
