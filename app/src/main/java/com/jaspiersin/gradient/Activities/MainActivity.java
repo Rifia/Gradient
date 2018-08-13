@@ -8,12 +8,11 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.jaspiersin.gradient.Entities.Event;
+import com.jaspiersin.gradient.Event;
 import com.jaspiersin.gradient.R;
-import com.jaspiersin.gradient.Views.EventViewModel;
+import com.jaspiersin.gradient.EventViewModel;
 
 import java.util.List;
 

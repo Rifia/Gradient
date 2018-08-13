@@ -1,4 +1,4 @@
-package com.jaspiersin.gradient.Entities;
+package com.jaspiersin.gradient;
 
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;

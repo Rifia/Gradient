@@ -1,12 +1,10 @@
-package com.jaspiersin.gradient.DAO;
+package com.jaspiersin.gradient;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
-
-import com.jaspiersin.gradient.Entities.Event;
 
 import java.util.List;
 
