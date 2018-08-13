@@ -13,12 +13,9 @@ public class Event {
     private String note;
 
     @ColumnInfo(name = "rating")
-    private int rating;
+    private String rating;
 
-    public Event(String note, int rating) {
-        this.note = note;
-        this.rating = rating;
-    }
+    public Event(){}
 
     public int getUid() {
         return uid;
@@ -36,11 +33,11 @@ public class Event {
         this.note = note;
     }
 
-    public int getRating() {
+    public String getRating() {
         return rating;
     }
 
-    public void setRating(int rating) {
+    public void setRating(String rating) {
         this.rating = rating;
     }
 
