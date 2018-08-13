@@ -1,12 +1,12 @@
-package com.jaspiersin.gradient.Views;
+package com.jaspiersin.gradient;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.support.annotation.NonNull;
 
-import com.jaspiersin.gradient.Entities.Event;
-import com.jaspiersin.gradient.Repository.AppRepository;
+import com.jaspiersin.gradient.Event;
+import com.jaspiersin.gradient.AppRepository;
 
 import java.util.List;
 import java.util.concurrent.Executor;

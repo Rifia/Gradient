@@ -1,9 +1,9 @@
-package com.jaspiersin.gradient.DBCreator;
+package com.jaspiersin.gradient;
 
 import android.arch.persistence.room.Room;
 import android.content.Context;
 
-import com.jaspiersin.gradient.Database.AppDatabase;
+import com.jaspiersin.gradient.AppDatabase;
 
 public class DatabaseCreator {
 

@@ -1,13 +1,12 @@
-package com.jaspiersin.gradient.Repository;
+package com.jaspiersin.gradient;
 
 
 import android.arch.lifecycle.LiveData;
 import android.content.Context;
-import android.util.Log;
 
-import com.jaspiersin.gradient.DAO.EventDao;
-import com.jaspiersin.gradient.DBCreator.DatabaseCreator;
-import com.jaspiersin.gradient.Entities.Event;
+import com.jaspiersin.gradient.EventDao;
+import com.jaspiersin.gradient.DatabaseCreator;
+import com.jaspiersin.gradient.Event;
 
 import java.util.List;
 
