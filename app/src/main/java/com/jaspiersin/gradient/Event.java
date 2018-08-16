@@ -3,6 +3,7 @@ package com.jaspiersin.gradient;
 import android.arch.persistence.room.ColumnInfo;
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;
+import android.support.annotation.NonNull;
 
 @Entity(tableName = "events")
 public class Event {
@@ -10,12 +11,19 @@ public class Event {
     private int uid;
 
     @ColumnInfo(name = "note")
+    @NonNull
     private String note;
 
     @ColumnInfo(name = "rating")
     private String rating;
 
     public Event(){}
+
+    public Event( @NonNull String note, String rating) {
+
+        this.note = note;
+        this.rating = rating;
+    }
 
     public int getUid() {
         return uid;
