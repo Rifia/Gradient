@@ -9,4 +9,7 @@
     <string name="rate_question">How would you rate it?</string>
     <string name="greeting">GRADIENT</string>
     <string name="start">Start</string>
+    <string name="empty_not_saved">Empty object</string>
+    <string name="button_save">Save</string>
+
 </resources>

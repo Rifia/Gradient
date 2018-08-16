@@ -8,4 +8,5 @@
     <color name="ultra_violet">#5F4B8B</color>
     <color name="dark_violet">#412D63</color>
     <color name="pink">#FCE7F8</color>
+    <color name="buttonLabel">#d3d3d3</color>
 </resources>

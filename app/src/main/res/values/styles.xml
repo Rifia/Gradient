@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/ultra_violet</item>
     </style>
 
+    <style name="violet_theme">
+        <item name="android:padding">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/ultra_violet</item>
+
+    </style>
+
+
 </resources>

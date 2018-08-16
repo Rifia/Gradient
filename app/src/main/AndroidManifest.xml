@@ -9,20 +9,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
 
-        <activity android:name=".Activities.StartActivity">
+
+
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <activity android:name=".Activities.NewEventActivity">
 
-        <activity android:name=".Activities.RatingActivity">
         </activity>
 
-        <activity android:name=".Activities.MainActivity">
-        </activity>
 
-        <activity android:name=".Activities.NoteActivity">
-        </activity>
     </application>
 </manifest>

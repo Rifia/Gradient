@@ -10,6 +10,7 @@ import android.widget.TextView;
 import java.util.List;
 
 public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.EventViewHolder>{
+
     class EventViewHolder extends RecyclerView.ViewHolder{
         private final TextView eventItemView;
 
@@ -28,25 +29,27 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
 
     @Override
     public EventViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = mInflater.inflate(R.layout.item, parent, false);
+        View itemView = mInflater.inflate(R.layout.recyclerview_item, parent, false);
         return new EventViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(EventViewHolder holder, int position) {
-        if (mEvents != null){
+       // if (mEvents != null){
             Event current = mEvents.get(position);
-        }else{
-            holder.eventItemView.setText("No event");
-        }
+       // }else{
+            holder.eventItemView.setText(current.getNote());
+       // }
     }
-    void  setmEvents(List<Event> events){
+    public void setEvents(List<Event> events){
         mEvents = events;
         notifyDataSetChanged();
     }
 
     @Override
     public int getItemCount(){
-        if(mEvents != null){return  mEvents.size();} else return 0;
+        if(mEvents != null)
+            return  mEvents.size();
+        else return 0;
     }
 }

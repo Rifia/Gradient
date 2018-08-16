@@ -34,6 +34,7 @@ public abstract class AppDatabase extends RoomDatabase {
             new PopulateDbAsync(INSTANCE).execute();
         }
     };
+
     private static class PopulateDbAsync extends AsyncTask<Void, Void, Void> {
 
         private final EventDao mDao;
@@ -45,9 +46,9 @@ public abstract class AppDatabase extends RoomDatabase {
         @Override
         protected Void doInBackground(final Void... params) {
             //mDao.deleteAll();
-            Event event = new Event("Hello", "56");
+            Event event = new Event("Hello");
             mDao.insert(event);
-            event = new Event("World", "44");
+            event = new Event("World");
             mDao.insert(event);
             return null;
         }
