@@ -23,7 +23,7 @@ public interface EventDao {
     @Insert
     void insert(Event event);
 
-    @Delete
-    void delete(Event event);
+//    @Delete
+//    void delete(Event event);
 
 }
