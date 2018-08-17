@@ -9,35 +9,36 @@ import java.util.List;
 
 public class AppRepository {
 
-    private EventDao eventDao;
-    private LiveData<List<Event>> allEvents;
+    private EventDao mEventDao;
+    private LiveData<List<Event>> mAllEvents;
 
-    public LiveData<List<Event>> getAllEvents(){
-        return allEvents;
+    public AppRepository(Application application) {
+        AppDatabase db = AppDatabase.getDatabase(application);
+        mEventDao = db.eventDao();
+        mAllEvents = mEventDao.getAllEvents();
     }
 
     public void insert(Event event){
-        new insertAsyncTask(eventDao).execute(event);
+        new insertAsyncTask(mEventDao).execute(event);
     }
 
-    private static class insertAsyncTask extends AsyncTask<Event, Void, Void> {
+    public LiveData<List<Event>> getAllEvents(){
+        return mAllEvents;
+    }
 
-        private EventDao mAsyncTaskDao;
 
-        insertAsyncTask(EventDao dao) {
-            mAsyncTaskDao = dao;
+
+    private class insertAsyncTask extends AsyncTask<Event, Void, Void> {
+
+        public insertAsyncTask(EventDao mEventDao) {
         }
 
         @Override
-        protected Void doInBackground(final Event... params) {
-            mAsyncTaskDao.insert(params[0]);
+        protected Void doInBackground(final Event... events) {
+            mEventDao.insert(events[0]);
             return null;
         }
     }
 
-    public AppRepository(Application application) {
-        AppDatabase db = AppDatabase.getDatabase(application);
-        eventDao = db.eventDao();
-        allEvents = eventDao.getAll();
-    }
+
 }

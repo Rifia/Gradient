@@ -3,21 +3,23 @@ package com.jaspiersin.gradient;
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
+import android.support.annotation.NonNull;
 
 import java.util.List;
 
 public class EventViewModel extends AndroidViewModel {
-    private AppRepository mRepository;
-    private LiveData<List<Event>> mAllEvents;
 
-    public EventViewModel(Application application){
+    private AppRepository mRepository;
+    private LiveData<List<Event>> mEvents;
+
+    public EventViewModel(@NonNull Application application){
         super(application);
         mRepository = new AppRepository(application);
-        mAllEvents = mRepository.getAllEvents();
+        mEvents = mRepository.getAllEvents();
     }
 
     public LiveData<List<Event>> getAllEvents(){
-        return mAllEvents;
+        return mEvents;
     }
 
     public void insert(Event event){

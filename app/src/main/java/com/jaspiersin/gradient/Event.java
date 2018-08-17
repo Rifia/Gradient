@@ -8,17 +8,40 @@ import android.support.annotation.NonNull;
 @Entity(tableName = "events")
 public class Event {
 
-    @PrimaryKey
-    @NonNull
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
+    private int mId;
     @ColumnInfo(name = "note")
-    private String note;
+    private String mNote;
+    @ColumnInfo(name = "rating")
+    private String mRating;
 
-    public Event(@NonNull String note) {
-        this.note = note;
+    public Event(@NonNull String mNote, @NonNull String mRating) {
+        this.mNote = mNote;
+        this.mRating = mRating;
     }
 
-    @NonNull
+    public int getId() {
+        return mId;
+    }
+
+    public void setId(int mId) {
+        this.mId = mId;
+    }
+
     public String getNote() {
-        return note;
+        return mNote;
+    }
+
+    public void setNote(String mNote) {
+        this.mNote = mNote;
+    }
+
+    public String getRating() {
+        return mRating;
+    }
+
+    public void setRating(String mRating) {
+        this.mRating = mRating;
     }
 }
