@@ -29,19 +29,22 @@ public class NewEventActivity extends AppCompatActivity {
         findViewById(R.id.btn_add).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!note.getText().toString().trim().isEmpty() &&
-                        !rating.toString().trim().isEmpty()
-                        ){
+                    if (!note.getText().toString().trim().isEmpty() && !rating.getText().toString().trim().isEmpty()) {
+                        if(Integer.valueOf(rating.getText().toString().trim()) <= 100 &&
+                                Integer.valueOf(rating.getText().toString().trim()) >= 0 ) {
 
-                String noteString = note.getText().toString().trim();
-                String ratingString = rating.getText().toString().trim();
-                String dateString = DateTimeFormats.shortFormat24h.format(new Date());
+                        String noteString = note.getText().toString().trim();
+                        String ratingString = rating.getText().toString().trim();
+                        String dateString = DateTimeFormats.shortFormat24h.format(new Date());
 
-                Event event = new Event(noteString, ratingString, dateString);
-                mEventViewModel.insert(event);
-                finish();
-            } else {
-                    Toast.makeText(getApplicationContext(), "Field is Empty", Toast.LENGTH_SHORT).show();
+                        Event event = new Event(noteString, ratingString, dateString);
+                        mEventViewModel.insert(event);
+                        finish();
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Rating diapason should be from 0 to 100", Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                    Toast.makeText(getApplicationContext(), "Field is Empty", Toast.LENGTH_LONG).show();
                 }
             }
         });
