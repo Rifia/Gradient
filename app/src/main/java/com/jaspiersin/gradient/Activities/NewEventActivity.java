@@ -17,9 +17,6 @@ public class NewEventActivity extends AppCompatActivity {
 
     private EventViewModel mEventViewModel;
 
-
-
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,15 +37,7 @@ public class NewEventActivity extends AppCompatActivity {
                 String ratingString = rating.getText().toString().trim();
                 String dateString = DateTimeFormats.shortFormat24h.format(new Date());
 
-
-//                    public final static DateFormat
-//                    getDateTimeInstance(int dateStyle, int timeStyle, Locale aLocale)
-//                    {
-//                        return get(timeStyle, dateStyle, 3, aLocale);
-//                    }
-
-
-                    Event event = new Event(noteString, ratingString, dateString);
+                Event event = new Event(noteString, ratingString, dateString);
                 mEventViewModel.insert(event);
                 finish();
             } else {
