@@ -6,6 +6,7 @@
         android:icon="@mipmap/ic_gradient_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_gradient_launcher_round"
+        android:logo="@mipmap/ic_gradient_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity android:name=".MainActivity"
