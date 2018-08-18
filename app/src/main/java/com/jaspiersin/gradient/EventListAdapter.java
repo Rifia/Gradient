@@ -31,6 +31,7 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
 
         holder.eventNote.setText(mEvents.get(position).getNote());
         holder.eventRating.setText(mEvents.get(position).getRating());
+        holder.eventDate.setText(mEvents.get(position).getDate());
     }
 
     @Override
@@ -46,11 +47,13 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.Even
     class EventViewHolder extends RecyclerView.ViewHolder{
         private TextView eventNote;
         private TextView eventRating;
+        private TextView eventDate;
 
         private EventViewHolder(View itemView){
             super(itemView);
             eventNote = itemView.findViewById(R.id.tv_note);
             eventRating = itemView.findViewById(R.id.tv_rating);
+            eventDate = itemView.findViewById(R.id.tv_date);
         }
     }
 

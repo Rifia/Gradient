@@ -5,10 +5,8 @@ import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
-import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 
-import com.jaspiersin.gradient.Activities.MainActivity;
 
 @Database(entities = {Event.class}, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {

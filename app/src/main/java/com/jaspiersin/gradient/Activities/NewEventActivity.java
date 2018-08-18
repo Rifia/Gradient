@@ -7,12 +7,18 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.jaspiersin.gradient.DateTimeFormats;
 import com.jaspiersin.gradient.Event;
 import com.jaspiersin.gradient.EventViewModel;
+
+import java.util.Date;
 
 public class NewEventActivity extends AppCompatActivity {
 
     private EventViewModel mEventViewModel;
+
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -27,12 +33,22 @@ public class NewEventActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if(!note.getText().toString().trim().isEmpty() &&
-                        !rating.toString().trim().isEmpty()){
+                        !rating.toString().trim().isEmpty()
+                        ){
 
                 String noteString = note.getText().toString().trim();
                 String ratingString = rating.getText().toString().trim();
+                String dateString = DateTimeFormats.shortFormat24h.format(new Date());
 
-                Event event = new Event(noteString, ratingString);
+
+//                    public final static DateFormat
+//                    getDateTimeInstance(int dateStyle, int timeStyle, Locale aLocale)
+//                    {
+//                        return get(timeStyle, dateStyle, 3, aLocale);
+//                    }
+
+
+                    Event event = new Event(noteString, ratingString, dateString);
                 mEventViewModel.insert(event);
                 finish();
             } else {
