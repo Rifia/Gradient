@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jaspiersin.gradient.DateTimeFormats;
@@ -24,7 +26,26 @@ public class NewEventActivity extends AppCompatActivity {
 
         mEventViewModel = ViewModelProviders.of(this).get(EventViewModel.class);
         final EditText note = findViewById(R.id.et_note);
-        final EditText rating = findViewById(R.id.et_rating);
+        final TextView rating = findViewById(R.id.current_value);
+        final SeekBar seekBar = findViewById(R.id.seekBar);
+
+
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                rating.setText(String.valueOf(seekBar.getProgress()));
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+            }
+        });
 
         findViewById(R.id.btn_add).setOnClickListener(new View.OnClickListener() {
             @Override
