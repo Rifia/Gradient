@@ -11,11 +11,9 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Toast;
 import com.jaspiersin.gradient.Event;
 import com.jaspiersin.gradient.EventListAdapter;
 import com.jaspiersin.gradient.EventViewModel;
-import com.jaspiersin.gradient.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         mEventViewModel = ViewModelProviders.of(this).get(EventViewModel.class);
 
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

@@ -20,7 +20,7 @@ public abstract class AppDatabase extends RoomDatabase {
         if (INSTANCE == null) {
             synchronized (AppDatabase.class) {
                 if (INSTANCE == null) {
-                    INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
+                    INSTANCE = Room.databaseBuilder(context,
                             AppDatabase.class, "events")
                             .addCallback(sRoomDatabaseCallback)
                             .build();
