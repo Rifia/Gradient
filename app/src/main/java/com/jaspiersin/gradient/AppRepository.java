@@ -22,6 +22,10 @@ public class AppRepository {
         new insertAsyncTask(mEventDao).execute(event);
     }
 
+    public void delete(Event event){
+        new deleteAsyncTask(mEventDao).execute(event);
+    }
+
     public LiveData<List<Event>> getAllEvents(){
         return mAllEvents;
     }
@@ -35,10 +39,26 @@ public class AppRepository {
 
         @Override
         protected Void doInBackground(final Event... events) {
+
             mEventDao.insert(events[0]);
             return null;
         }
     }
+
+    private class deleteAsyncTask extends AsyncTask<Event, Void, Void> {
+
+        public deleteAsyncTask(EventDao mEventDao) {
+        }
+
+        @Override
+        protected Void doInBackground(final Event... events) {
+
+            mEventDao.delete(events[0]);
+            return null;
+        }
+    }
+
+
 
 
 }
