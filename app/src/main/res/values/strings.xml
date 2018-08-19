@@ -13,8 +13,9 @@
     <string name="button_save">Save</string>
     <string name="about">Как пользоваться?</string>
     <string name="delete_all">Удалить всё</string>
-    <string name="limit_note_field">max 140 символов</string>
+    <string name="limit_note_field">пишите тут</string>
     <string name="button_text">Добавить</string>
+    <string name="empty_note_toast">Вы не описали событие</string>
 
 
     <!--About Strings-->
