@@ -12,7 +12,6 @@
         android:id="@+id/tv_note"
         android:layout_width="match_parent"
         android:textSize="16sp"
-        android:text="vsgoijgosjb"
         android:maxLength="140"
         android:textColor="@android:color/white"
         android:layout_height="wrap_content" />
@@ -27,7 +26,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:text="87"
         android:maxLength="3"
         android:textColor="@android:color/white"
          />
@@ -37,7 +35,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment ="viewEnd"
-            android:text="18.08.18 ~ 21:27"
             android:textColor="@android:color/white"
             android:textSize="10sp" />
     </LinearLayout>

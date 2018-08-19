@@ -1,15 +1,36 @@
 <resources>
-    <string name="app_name">Gradient</string>
+    <string name="app_name">Neutrum</string>
     <string name="enter_note">write here</string>
     <string name="enter_rating">0-100</string>
     <string name="add">show</string>
-    <string name="question">What happened?</string>
+    <string name="question">Что случилось?</string>
     <string name="next">next</string>
     <string name="finish">finish</string>
-    <string name="rate_question">How would you rate it?</string>
-    <string name="greeting">GRADIENT</string>
+    <string name="rate_question">Как Вы это оцените?</string>
+    <string name="greeting">NEUTRUM</string>
     <string name="start">Start</string>
     <string name="empty_not_saved">Empty object</string>
     <string name="button_save">Save</string>
+    <string name="about">Как пользоваться?</string>
+    <string name="delete_all">Удалить всё</string>
+    <string name="limit_note_field">max 140 symbols</string>
+    <string name="button_text">Add</string>
+
+
+    <!--About Strings-->
+
+    <!--Main title-->
+    <string name="how_to_rate">Как оценивать событие?</string>
+
+    <!--Rules-->
+    <string name="first">1. 50 - балл нейтрального события. Оно не хорошее и не плохое. Никакое.
+        Уровень дзен - когда любое событие оценивается в 50±5 баллов.</string>
+    <string name="second">2. 100 - балл самого прекрасного события. </string>
+    <string name="third">3. 0 - балл самого ужасного события. </string>
+    <string name="fourth">4. Не впадайте в крайности/</string>
+
+    <!--App goal-->
+    <string name="goal">Цель приложения</string>
+    <string name="common_idea">Neutrum был создан с целью излечить чрезмерную эмоциональность и впечатлительность. Оценивая события от 0 до 100, масштаб радости или проблемы обретает конкретные значения. Такой подход может помочь избежать необдуманных поступков после случившегося, более спокойно относиться к жизни.</string>
 
 </resources>

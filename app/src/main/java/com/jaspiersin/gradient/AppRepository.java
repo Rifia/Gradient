@@ -30,6 +30,12 @@ public class AppRepository {
         return mAllEvents;
     }
 
+    public void deleteAll(){
+        new deleteAllEventsAsyncTask(mEventDao).execute();
+    }
+
+
+
 
 
     private class insertAsyncTask extends AsyncTask<Event, Void, Void> {
@@ -54,6 +60,20 @@ public class AppRepository {
         protected Void doInBackground(final Event... events) {
 
             mEventDao.delete(events[0]);
+            return null;
+        }
+    }
+
+    private static class deleteAllEventsAsyncTask extends AsyncTask<Void, Void, Void> {
+        private EventDao mAsyncTaskDao;
+
+        deleteAllEventsAsyncTask(EventDao dao) {
+            mAsyncTaskDao = dao;
+        }
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+            mAsyncTaskDao.deleteAll();
             return null;
         }
     }
