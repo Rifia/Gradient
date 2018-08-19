@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.jaspiersin.gradient.Activities.MainActivity"
-    android:background="@color/ultra_violet">
+    android:background="@color/light_violet">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

@@ -3,8 +3,9 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/ultra_violet"
+    android:background="@drawable/round_corners"
     android:padding="10dp"
+    android:layout_margin="5dp"
     android:orientation="vertical">
 
     <TextView
@@ -35,8 +36,7 @@
             android:id="@+id/tv_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textAlignment="viewEnd"
-            android:layout_gravity="bottom"
+            android:textAlignment ="viewEnd"
             android:text="18.08.18 ~ 21:27"
             android:textColor="@android:color/white"
             android:textSize="10sp" />
