@@ -11,4 +11,6 @@
     <color name="buttonLabel">#d3d3d3</color>
     <color name="light_violet">#e7ddff</color>
     <color name="white">#ffffff</color>
+    <color name="text_about_small">#746f80</color>
+    <color name="text_about_big">#44384b</color>
 </resources>

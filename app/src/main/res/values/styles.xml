@@ -76,15 +76,13 @@
         <item name="colorAccent">@android:color/white</item>
     </style>
 
-    <style name="activity_about_style">
-        <item name="android:layout_width">wrap_content</item>
+    <style name="about_text">
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginEnd">8dp</item>
-        <item name="android:layout_marginStart">8dp</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@color/dark_violet</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/text_about_big</item>
     </style>
+
 
 
 

@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    tools:context=".AboutActivity"
+    android:background="@color/light_violet">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/how_rate"
+            style="@style/about_text"
+            android:text="@string/how_to_rate"
+            android:textSize="28sp" />
+        <TextView
+            android:id="@+id/first_item"
+            style="@style/about_text"
+            android:text="@string/first"
+            android:textSize="16sp"
+            android:layout_below="@+id/how_rate"/>
+        <TextView
+            android:id="@+id/second_item"
+            style="@style/about_text"
+            android:text="@string/second"
+            android:textSize="16sp"
+            android:layout_below="@+id/first_item"/>
+        <TextView
+            android:id="@+id/third_item"
+            style="@style/about_text"
+            android:text="@string/third"
+            android:textSize="16sp"
+            android:layout_below="@+id/second_item"/>
+        <TextView
+            android:id="@+id/fourth_item"
+            style="@style/about_text"
+            android:text="@string/fourth"
+            android:textSize="16sp"
+            android:layout_below="@+id/third_item"/>
+        <TextView
+            android:id="@+id/goal_app"
+            style="@style/about_text"
+            android:text="@string/goal"
+            android:textSize="28sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/fourth_item"/>
+        <TextView
+            android:id="@+id/idea"
+            style="@style/about_text"
+            android:text="@string/common_idea"
+            android:textSize="16sp"
+            android:layout_below="@+id/goal_app"/>
 
-</android.support.constraint.ConstraintLayout>
+    </RelativeLayout>
+
+</ScrollView>
