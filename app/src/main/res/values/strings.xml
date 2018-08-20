@@ -2,10 +2,6 @@
     <string name="app_name">Neutrum</string>
     <string name="question">Что случилось?</string>
     <string name="rate_question">Как Вы это оцените?</string>
-    <string name="start">Start</string>
-    <string name="empty_not_saved">Empty object</string>
-    <string name="button_save">Save</string>
-    <string name="about">Как пользоваться?</string>
     <string name="delete_all">Удалить всё</string>
     <string name="button_text">Добавить</string>
     <string name="delete_toast">Событие удалено</string>
@@ -18,8 +14,7 @@
     <string name="how_to_rate">Как оценивать событие?</string>
 
     <!--Rules-->
-    <string name="first">1. 50 - балл нейтрального события. Оно не хорошее и не плохое. Никакое.
-        Уровень дзен - когда любое событие оценивается в 50±5 баллов.</string>
+    <string name="first">1. 50 - балл нейтрального события. Оно не хорошее и не плохое. Никакое. Уровень дзен - когда любое событие оценивается в 50±5 баллов.</string>
     <string name="second">2. 100 - балл самого прекрасного события. </string>
     <string name="third">3. 0 - балл самого ужасного события. </string>
     <string name="fourth">4. Не впадайте в крайности.</string>
