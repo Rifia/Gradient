@@ -6,8 +6,8 @@
             <size android:height="4dp"/>
 
             <gradient
-                android:endColor="@color/dark_violet"
-                android:startColor="@color/dark_violet" />
+                android:endColor="@color/dark"
+                android:startColor="@color/dark" />
         </shape>
     </item>
 
@@ -17,8 +17,8 @@
                 <size android:height="4dp"/>
 
                 <gradient
-                    android:endColor="#ffffff"
-                    android:startColor="#ffffff" />
+                    android:endColor="@color/main"
+                    android:startColor="@color/main" />
             </shape>
         </clip>
     </item>
@@ -29,8 +29,8 @@
                 <size android:height="4dp"/>
 
                 <gradient
-                    android:endColor="#ffffff"
-                    android:startColor="#ffffff" />
+                    android:endColor="@color/main"
+                    android:startColor="@color/main" />
             </shape>
         </clip>
     </item>

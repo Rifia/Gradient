@@ -8,7 +8,7 @@
     android:paddingBottom="16dp"
     android:paddingTop="16dp"
     tools:context=".AboutActivity"
-    android:background="@color/light_violet">
+    android:background="@color/white">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -16,30 +16,35 @@
             android:id="@+id/how_rate"
             style="@style/about_text"
             android:text="@string/how_to_rate"
-            android:textSize="28sp" />
+            android:textSize="28sp"
+            android:textColor="@color/gray_dark"/>
         <TextView
             android:id="@+id/first_item"
             style="@style/about_text"
             android:text="@string/first"
             android:textSize="16sp"
+            android:textColor="#545454"
             android:layout_below="@+id/how_rate"/>
         <TextView
             android:id="@+id/second_item"
             style="@style/about_text"
             android:text="@string/second"
             android:textSize="16sp"
+            android:textColor="#545454"
             android:layout_below="@+id/first_item"/>
         <TextView
             android:id="@+id/third_item"
             style="@style/about_text"
             android:text="@string/third"
             android:textSize="16sp"
+            android:textColor="#545454"
             android:layout_below="@+id/second_item"/>
         <TextView
             android:id="@+id/fourth_item"
             style="@style/about_text"
             android:text="@string/fourth"
             android:textSize="16sp"
+            android:textColor="#545454"
             android:layout_below="@+id/third_item"/>
         <TextView
             android:id="@+id/goal_app"
@@ -47,12 +52,14 @@
             android:text="@string/goal"
             android:textSize="28sp"
             android:layout_marginTop="20dp"
+            android:textColor="@color/gray_dark"
             android:layout_below="@+id/fourth_item"/>
         <TextView
             android:id="@+id/idea"
             style="@style/about_text"
             android:text="@string/common_idea"
             android:textSize="16sp"
+            android:textColor="#545454"
             android:layout_below="@+id/goal_app"/>
 
     </RelativeLayout>

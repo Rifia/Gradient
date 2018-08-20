@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:textSize="16sp"
         android:maxLength="140"
-        android:textColor="@android:color/white"
+        android:textColor="@color/gray_dark"
         android:layout_height="wrap_content" />
 
     <LinearLayout
@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:maxLength="3"
-        android:textColor="@android:color/white"
+        android:textColor="@color/gray_dark"
          />
 
         <TextView
@@ -35,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment ="viewEnd"
-            android:textColor="@android:color/white"
+            android:textColor="@color/gray_dark"
             android:textSize="10sp" />
     </LinearLayout>
 

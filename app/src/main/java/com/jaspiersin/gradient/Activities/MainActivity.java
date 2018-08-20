@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                                          int direction) {
                         int position = viewHolder.getAdapterPosition();
                         Event myEvent = adapter.getEventAtPosition(position);
-                        Toast.makeText(MainActivity.this, "Event deleted", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, R.string.delete_toast, Toast.LENGTH_LONG).show();
 
                         mEventViewModel.delete(myEvent);
                     }

@@ -3,10 +3,16 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/ultra_violet</item>
-        <item name="colorPrimaryDark">@color/ultra_violet</item>
-        <item name="colorAccent">@color/ultra_violet</item>
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryDark">@color/main</item>
+        <item name="colorAccent">@color/main</item>
         <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="SplashTheme"
+        parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_scr</item>
+
     </style>
 
 
@@ -19,12 +25,12 @@
 
     </style>
 
-    <style name="violet_theme">
+    <style name="main_theme">
         <item name="android:padding">20dp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">20dp</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:background">@color/ultra_violet</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:background">@color/main</item>
 
     </style>
 
@@ -44,7 +50,7 @@
         <item name="android:layout_marginTop">52dp</item>
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@android:color/white</item>
+       <item name="android:textColor">@color/gray_dark</item>
     </style>
 
     <style name="activity_number_style">
@@ -55,7 +61,7 @@
         <item name="android:layout_marginTop">30dp</item>
         <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:textColor">@android:color/white</item>
+       <item name="android:textColor">@color/gray_dark</item>
     </style>
 
     <style name="activity_fields_style">
@@ -67,20 +73,19 @@
         <item name="android:ems">10</item>
         <item name="android:textAlignment">center</item>
         <item name="android:maxLines">1</item>
-        <item name="android:textColor">@android:color/white</item>
+       <item name="android:textColor">@color/gray_dark</item>
         <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="MySeekBarTheme" parent="Widget.AppCompat.SeekBar" >
-        <item name="colorAccent">@android:color/white</item>
+        <item name="colorAccent">@color/main</item>
     </style>
 
     <style name="about_text">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginTop">8dp</item>
-        <item name="android:textColor">@color/text_about_big</item>
         <item name="android:textStyle">bold</item>
     </style>
 

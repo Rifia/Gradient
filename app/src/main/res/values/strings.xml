@@ -1,20 +1,14 @@
 <resources>
     <string name="app_name">Neutrum</string>
-    <string name="enter_note">write here</string>
-    <string name="enter_rating">0-100</string>
-    <string name="add">show</string>
     <string name="question">Что случилось?</string>
-    <string name="next">next</string>
-    <string name="finish">finish</string>
     <string name="rate_question">Как Вы это оцените?</string>
-    <string name="greeting">NEUTRUM</string>
     <string name="start">Start</string>
     <string name="empty_not_saved">Empty object</string>
     <string name="button_save">Save</string>
     <string name="about">Как пользоваться?</string>
     <string name="delete_all">Удалить всё</string>
-    <string name="limit_note_field">пишите тут</string>
     <string name="button_text">Добавить</string>
+    <string name="delete_toast">Событие удалено</string>
     <string name="empty_note_toast">Вы не описали событие</string>
 
 
