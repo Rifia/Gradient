@@ -104,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.clear_data) {
             mEventViewModel.deleteAll();
+            Toast.makeText(MainActivity.this, R.string.delete_all_toast, Toast.LENGTH_SHORT).show();
             return true;
         }
 

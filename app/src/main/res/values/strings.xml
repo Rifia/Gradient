@@ -5,6 +5,7 @@
     <string name="delete_all">Удалить всё</string>
     <string name="button_text">Добавить</string>
     <string name="delete_toast">Событие удалено</string>
+    <string name="delete_all_toast">Удалено</string>
     <string name="empty_note_toast">Вы не описали событие</string>
 
 
